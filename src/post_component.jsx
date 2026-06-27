@@ -1,4 +1,4 @@
-function PostComponent({ title, body, children }) {
+function PostComponent({ title = "no tilte", body = "no body", children }) {
   const postSyle = {
     padding: "20px",
     margin: "25px",
@@ -18,8 +18,8 @@ function PostComponent({ title, body, children }) {
   return (
     <div style={postSyle}>
       <h1>{title}</h1>
-      <hr style={lineStyle} />
       <p>{children}</p>
+      <hr style={lineStyle} />
       <p>{body}</p>
     </div>
   );

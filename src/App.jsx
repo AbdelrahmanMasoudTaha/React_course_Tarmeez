@@ -26,14 +26,17 @@ function App() {
       <main style={mainWrapperStyle}>
         <div style={{ display: "flex", width: "60%" }}>
           <div style={{ width: "70%" }}>
-            <PostComponent title="title " body="body one">
-              <p>this is a test for children </p>
+            <PostComponent title="20 " body="body one">
+              <p>بوست من الابن </p>
             </PostComponent>
-            <PostComponent title="title two" body="body two" />
-            <PostComponent title="title three" body="body three" />
-            <PostComponent title="title four" body="body four" />
-            <PostComponent title="title five" body="body five" />
-            <PostComponent title="title six" body="body six" />
+            <PostComponent
+              title="Hello World"
+              body="This is hello world post"
+            />
+            <PostComponent
+              title="title three"
+              body="body three"
+            ></PostComponent>
             <PostComponent />
           </div>
           <div style={{ width: "30%" }}>
